@@ -15,6 +15,12 @@
       %dl.third
         %dt= f.label :sku, t('shoppe.products.sku')
         %dd= f.text_field :sku, :class => 'text'
+
+    .splitContainer
+        %dl.third
+          %dt= f.label :model, t('shoppe.products.model')
+          %dd= f.text_field :model, :class => 'text'
+
     %dl
       %dt= f.label :description, t('shoppe.products.description')
       %dd= f.text_area :description, :class => 'text'
