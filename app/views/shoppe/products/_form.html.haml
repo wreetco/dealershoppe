@@ -34,6 +34,9 @@
         %dt= f.label :transmission, t('shoppe.products.transmission')
         %dd= f.text_field :transmission, :class => 'text'
       %dl.third
+        %dt= f.label :fuel_type, t('shoppe.products.fuel_type')
+        %dd= f.text_field :fuel_type, :class => 'text'
+      %dl.third
         %dt= f.label :mpg, t('shoppe.products.mpg')
         %dd= f.text_field :mpg, :class => 'text'
 
@@ -44,9 +47,7 @@
       %dl.third
         %dt= f.label :color, t('shoppe.products.color')
         %dd= f.text_field :color, :class => 'text'
-      %dl.third
-        %dt= f.label :fuel_type, t('shoppe.products.fuel_type')
-        %dd= f.text_field :fuel_type, :class => 'text'
+
 
     %dl
       %dt= f.label :description, t('shoppe.products.description')
