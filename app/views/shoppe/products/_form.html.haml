@@ -20,8 +20,11 @@
         %dd= f.text_field :year, :class => 'text'
     .splitContainer
       %dl.third
-        %dt= f.label :sku, t('shoppe.products.sku')
-        %dd= f.text_field :sku, :class => 'text'
+        %dt= f.label :engine, t('shoppe.products.engine')
+        %dd= f.text_field :engine, :class => 'text'
+      %dl.third
+        %dt= f.label :fuel_type, t('shoppe.products.trim')
+        %dd= f.text_field :trim, :class => 'text'
       %dl.third
         %dt= f.label :miles, t('shoppe.products.miles')
         %dd= f.text_field :miles, :class => 'text'
@@ -39,14 +42,14 @@
 
     .splitContainer
       %dl.third
+        %dt= f.label :sku, t('shoppe.products.sku')
+        %dd= f.text_field :sku, :class => 'text'
+      %dl.third
         %dt= f.label :color, t('shoppe.products.color')
         %dd= f.text_field :color, :class => 'text'
       %dl.third
         %dt= f.label :fuel_type, t('shoppe.products.fuel_type')
         %dd= f.text_field :fuel_type, :class => 'text'
-      %dl.third
-        %dt= f.label :fuel_type, t('shoppe.products.trim')
-        %dd= f.text_field :trim, :class => 'text'
 
     %dl
       %dt= f.label :description, t('shoppe.products.description')
