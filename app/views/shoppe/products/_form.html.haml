@@ -53,6 +53,9 @@
 
     .splitContainer
       %dl.third
+        %dt= f.label :mileage, t('shoppe.products.mileage')
+        %dd= f.text_field :mileage, :class => 'text'
+      %dl.third
         %dt= f.label :sku, t('shoppe.products.sku')
         %dd= f.text_field :sku, :class => 'text'
 
