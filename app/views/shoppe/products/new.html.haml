@@ -7,6 +7,7 @@
   %h2.products= t('shoppe.products.products')
 
 %div.vin_lookup{:'ng-app' => 'vinLookup'}
+  %ng-view
   %h1 VIN Lookup
   %input{:name => "vin"}
   %button{:'ng-click' => "MainCtrl.lookupVin(this.value)"} Decode
