@@ -7,6 +7,6 @@
 %div.vin_lookup
   %h1 VIN Lookup
   %input{:name => "vin"}
-  %button Decode
+  %button{:ng-click => "MainCtrl.getCarByVin(this.value)"} Decode
 
 = render 'form'
