@@ -6,7 +6,7 @@
   %p.buttons= link_to t('shoppe.products.back_to_products') , :products, :class => 'button'
   %h2.products= t('shoppe.products.products')
 
-%div.vin_lookup{:'ng-app' => 'VinLookup'}
+%div.vin_lookup{:'ng-app' => 'vinLookup'}
   %h1 VIN Lookup
   %input{:name => "vin"}
   %button{:'ng-click' => "MainCtrl.lookupVin(this.value)"} Decode
