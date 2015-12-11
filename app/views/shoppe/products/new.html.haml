@@ -10,7 +10,7 @@
   %ng-view
   %h1 VIN Lookup
   %input{:name => "vin"}
-  %button{:'ng-click' => "MainCtrl.lookupVin(this.value)"} Decode
+  %button{:'ng-controller' => 'MainCtrl', :'ng-click' => "MainCtrl.lookupVin(this.value)"} Decode
 
 %br
 
