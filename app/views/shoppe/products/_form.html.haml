@@ -13,16 +13,15 @@
       -#  %dt= f.label :permalink, t('shoppe.products.permalink')
       -#  %dd= f.text_field :permalink, :class => 'text'
       %dl.third
-        %dt= f.label :sku, t('shoppe.products.sku')
-        %dd= f.text_field :sku, :class => 'text'
-      %dl.third
         %dt= f.label :model, t('shoppe.products.model')
         %dd= f.text_field :model, :class => 'text'
-
-    .splitContainer
       %dl.third
         %dt= f.label :year, t('shoppe.products.year')
         %dd= f.text_field :year, :class => 'text'
+    .splitContainer
+      %dl.third
+        %dt= f.label :sku, t('shoppe.products.sku')
+        %dd= f.text_field :sku, :class => 'text'
       %dl.third
         %dt= f.label :miles, t('shoppe.products.miles')
         %dd= f.text_field :miles, :class => 'text'
