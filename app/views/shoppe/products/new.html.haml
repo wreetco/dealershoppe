@@ -9,7 +9,8 @@
 %div.vin_lookup{:'ng-app' => 'vinLookup', :'ng-controller' => 'MainCtrl'}
   %ng-view
   %h1 VIN Lookup
-  %input{:name => "vin", :'ng-model' => 'vin'}
+  %input.text{:name => "vin", :'ng-model' => 'vin'}
+  %br
   %button.green.button{:'ng-click' => "lookupVin(this.value)"} Decode
 
 %br
