@@ -4,9 +4,7 @@
   %p.buttons= link_to t('shoppe.products.back_to_products') , :products, :class => 'button'
   %h2.products= t('shoppe.products.products')
 
-<div>
-  Vin Lookup: <br />
-  <input type="text" name="vin" />
-</div>
+%div.vin_lookup
+  %input
 
 = render 'form'
