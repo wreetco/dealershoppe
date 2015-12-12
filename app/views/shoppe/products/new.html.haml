@@ -1,7 +1,6 @@
 - @page_title = t('shoppe.products.products')
 
 = javascript_include_tag 'vin_lookup.js'
-%script{:src => "https://code.jquery.com/jquery-1.8.0.min.js"}
 
 = content_for :header do
   %p.buttons= link_to t('shoppe.products.back_to_products') , :products, :class => 'button'
@@ -16,9 +15,6 @@
   %button.green.button.button-mini{:'ng-click' => "lookupVin(this.value)"} Decode
 
 %br
-
-%div#trim-select
-  %span hello world
 
 
 = render 'form'
