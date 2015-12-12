@@ -40,10 +40,10 @@
     .splitContainer
       %dl.third
         %dt= f.label :mpg, t('shoppe.products.mpg_city')
-        %dd= f.text_field :mpg_city, :class => 'text'
+        %dd= f.text_field :mpg_city, :class => 'text', :'ng-model' => 'car_form.mpg_city'
       %dl.third
         %dt= f.label :mpg, t('shoppe.products.mpg_highway')
-        %dd= f.text_field :mpg_highway, :class => 'text'
+        %dd= f.text_field :mpg_highway, :class => 'text', :'ng-model' => 'car_form.mpg_highway'
       %dl.third
         %dt= f.label :drivetrain, t('shoppe.products.drivetrain')
         %dd= f.text_field :drivetrain, :class => 'text'
