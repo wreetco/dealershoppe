@@ -42,7 +42,7 @@ module Shoppe
       product.validates :description, presence: true
       #product.validates :short_description, presence: true
     end
-    validates :name, presence: true
+    #validates :name, presence: true
     validates :permalink, presence: true, uniqueness: true, permalink: true
     validates :sku, presence: true
     validates :weight, numericality: true
