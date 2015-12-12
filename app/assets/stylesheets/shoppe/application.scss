@@ -640,4 +640,8 @@ nav.pagination {
 
 #trim-select {
 	display: none;
+	z-index: 99;
+	width: 600px;
+	height: 400px;
+	background: red;
 }
