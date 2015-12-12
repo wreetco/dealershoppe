@@ -9,12 +9,9 @@
       %dl.third
         %dt= f.label :make, t('shoppe.products.make')
         %dd= f.text_field :make, :class => 'text focus', :'ng-model' => 'car_form.make'
-      -#%dl.third
-      -#  %dt= f.label :permalink, t('shoppe.products.permalink')
-      -#  %dd= f.text_field :permalink, :class => 'text', :'ng-model' => 'car_form.model' 
       %dl.third
         %dt= f.label :model, t('shoppe.products.model')
-        %dd= f.text_field :model, :class => 'text'
+        %dd= f.text_field :model, :class => 'text', :'ng-click' => 'car_form.model'
       %dl.third
         %dt= f.label :year, t('shoppe.products.year')
         %dd= f.text_field :year, :class => 'text'
