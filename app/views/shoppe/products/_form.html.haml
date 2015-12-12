@@ -32,7 +32,7 @@
         %dd= f.text_field :transmission, :class => 'text', :'ng-model' => 'car_form.transmission'
       %dl.third
         %dt= f.label :fuel_type, t('shoppe.products.fuel_type')
-        %dd= f.text_field :fuel_type, :class => 'text'
+        %dd= f.text_field :fuel_type, :class => 'text', :'ng-model' => 'car_form.fuel_type'
       %dl.third
         %dt= f.label :color, t('shoppe.products.color')
         %dd= f.text_field :color, :class => 'text'
