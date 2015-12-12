@@ -50,9 +50,6 @@
 
     .splitContainer
       %dl.third
-        %dt= f.label :mileage, t('shoppe.products.mileage')
-        %dd= f.text_field :mileage, :class => 'text'
-      %dl.third
         %dt= f.label :sku, t('shoppe.products.interior')
         %dd= f.text_field :interior, :class => 'text'
       %dl.third
@@ -63,12 +60,12 @@
     %dl
       %dt= f.label :description, t('shoppe.products.description')
       %dd= f.text_area :description, :class => 'text'
-    -#%dl
-    -#  %dt= f.label :short_description, t('shoppe.products.short_description')
-    -#  %dd= f.text_area :short_description, :class => 'text'
-    -#%dl
-    -#  %dt= f.label :in_the_box, t('shoppe.products.in_the_box')
-    -#  %dd= f.text_area :in_the_box, :class => 'text'
+    %dl
+      %dt= f.label :short_description, t('shoppe.products.short_description')
+      %dd= f.text_area :short_description, :class => 'text'
+    %dl
+      %dt= f.label :in_the_box, t('shoppe.products.in_the_box')
+      %dd= f.text_area :in_the_box, :class => 'text'
 
   = field_set_tag t('shoppe.products.attributes') do
     .margin
