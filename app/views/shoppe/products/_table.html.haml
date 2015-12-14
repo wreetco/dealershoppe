@@ -17,7 +17,7 @@
           - for product in products
             %tr
               %td= product.sku
-              %td= link_to product.name, [:edit, product]
+              %td= link_to "#{product.make} #{product.model}", [:edit, product]
               - if product.has_variants?
                 %td.table{:colspan => 2}
                   %table.data
@@ -39,4 +39,3 @@
                     = boolean_tag(product.in_stock?, nil, :true_text => product.stock, :false_text => t('shoppe.products.no_stock'))
                   - else
                     &#8734;
-
