@@ -17,7 +17,7 @@
           - for product in products
             %tr
               %td= product.sku
-              %td= link_to "#{product.make} #{product.model}", [:edit, product]
+              %td= link_to "#{product.year} #{product.make} #{product.model}", [:edit, product]
               - if product.has_variants?
                 %td.table{:colspan => 2}
                   %table.data
